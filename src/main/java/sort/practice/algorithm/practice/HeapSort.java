@@ -2,6 +2,8 @@ package sort.practice.algorithm.practice;
 
 import sort.practice.algorithm.practice.util.Print;
 
+import static sort.practice.algorithm.practice.util.Swap.swap;
+
 public class HeapSort {
  private static void buildHeap(int[] arr, int i){
      for(int j = (i - 1)/ 2; j >= 0; j--) {
@@ -19,12 +21,6 @@ public class HeapSort {
          }
      }
 //     swap(arr,i,0);
- }
-
- private static void swap(int[] arr, int m, int n) {
-     int temp = arr[m];
-     arr[m] = arr[n];
-     arr[n] = temp;
  }
 
 public static void main(String[] args) {

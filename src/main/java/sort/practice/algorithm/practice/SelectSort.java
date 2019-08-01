@@ -1,5 +1,7 @@
 package sort.practice.algorithm.practice;
 
+import static sort.practice.algorithm.practice.util.Swap.swap;
+
 public class SelectSort {
 
     private void sort(int[] arr) {
@@ -12,9 +14,4 @@ public class SelectSort {
         }
     }
 
-    private void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
-    }
 }

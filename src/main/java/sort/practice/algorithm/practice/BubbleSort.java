@@ -2,6 +2,8 @@ package sort.practice.algorithm.practice;
 
 import sort.practice.algorithm.practice.util.Print;
 
+import static sort.practice.algorithm.practice.util.Swap.swap;
+
 public class BubbleSort {
     private static void bubbleSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
@@ -11,11 +13,6 @@ public class BubbleSort {
                 }
             }
         }
-    }
-    private static void swap(int[] array, int m, int n) {
-        int temp = array[m];
-        array[m] = array[n];
-        array[n] = temp;
     }
 
     public static void main(String[] args) {
