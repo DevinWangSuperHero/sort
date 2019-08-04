@@ -5,6 +5,7 @@ import sort.practice.algorithm.practice.util.Print;
 import static sort.practice.algorithm.practice.util.Swap.swap;
 
 public class QuickSort {
+
     private static void quickSort(int[] array,int start, int end) {
         if (start == end) {
             return;

@@ -12,10 +12,10 @@ public class HeapSort {
                swap(arr,j,2*j + 1);
            }
          } else {
-             if (arr[j] > arr[2*j + 1]) {
+             if (arr[j] < arr[2*j + 1]) {
                  swap(arr,j,2*j + 1);
              }
-             if (arr[j] > arr[j+2]) {
+             if (arr[j] < arr[2*j+2]) {
                  swap(arr,j,2*j+2);
              }
          }
@@ -24,7 +24,7 @@ public class HeapSort {
  }
 
 public static void main(String[] args) {
-    int[] array=new int[]{8,3,2,1,7,4,6,5};
+    int[] array=new int[]{3,2,1,4,5};
     Print.printResult(array);
     for (int i = array.length - 1; i >= 0; i--) {
         buildHeap(array,i);
